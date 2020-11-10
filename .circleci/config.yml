@@ -1,0 +1,8 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: quay.io/cybozu/ubuntu-dev:20.04
+    steps:
+      - checkout:
+      - run: echo "Hello, world!"
