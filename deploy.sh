@@ -4,9 +4,9 @@ target_branch="ghp-deploy"
 repo_uri="https://${GH_TOKEN}@github.com/uchan-nos/myproj.git"
 
 git config user.name "CircleCI deployer"
-git config user.mail "<>"
+git config user.email "<>"
 git checkout $target_branch
-git reset --hard origin/master
+git reset --hard origin/main
 
 gcc -o a.out a.c
 echo "size of a.out is $(wc -c a.out)" > a.attr
