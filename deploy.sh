@@ -1,7 +1,7 @@
 #!/bin/sh -ex
 
 target_branch="ghp-deploy"
-repo_uri="https://${GH_TOKEN}@github.com/uchan-nos/myproj.git"
+repo_uri="git@github.com:uchan-nos/myproj.git"
 
 git config user.name "CircleCI deployer"
 git config user.email "<>"
