@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -ex
 
 target_branch="ghp-deploy"
 repo_uri="https://${GH_TOKEN}@github.com/uchan-nos/myproj.git"
