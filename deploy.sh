@@ -3,6 +3,7 @@ target_branch="ghp-deploy"
 git config --global user.name "CircleCI deployer"
 git config --global user.email "<>"
 git checkout $target_branch
+git reset --hard origin/main
 
 gcc -o a.out a.c
 echo "size of a.out is $(wc -c a.out)" > a.txt
