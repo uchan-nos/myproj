@@ -1,15 +1,12 @@
 #include <stdio.h>
 
+int fib(int i) {
+  if (i <= 1) {
+    return i;
+  }
+  return fib(i - 2) + fib(i - 1);
+}
+
 int main() {
-  printf("hello, world!\n");
-
-  for (int i = 0; i < 5; ++i) {
-    printf("%d\n", i);
-  }
-
-  int sum = 0;
-  for (int i = 1; i <= 10; ++i) {
-    sum += i;
-  }
-  printf("sum = %d\n", sum);
+  printf("fib(10) = %d\n", fib(10));
 }

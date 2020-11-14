@@ -6,7 +6,7 @@ git checkout $target_branch
 git reset --hard origin/main
 
 gcc -o a.out a.c
-echo "size of a.out is $(wc -c a.out)" > a.txt
+echo "output of a.out: $(./a.out)" > a.txt
 
 git add a.out a.txt
 git commit -m "[skip ci] updates GitHub Pages"
